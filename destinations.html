@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - NepalMood</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://public.youware.com/users-website-assets/prod/1e6b8fef-19d2-424c-ac94-d8f2e7904a8e/15273c37665c4b8896924a8825bdbe3c.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 50vh;
+        }
+        
+        .destination-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-10px);
+        }
+    </style></head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4">
+                            <span class="text-blue-600 text-xl font-bold">NepalMood</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300">Home</a>
+                        <a href="destinations.html" class="py-4 px-2 text-blue-600 border-b-4 border-blue-600 font-semibold">Destinations</a>
+                        <a href="experiences.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300">Experiences</a>
+                        <a href="about.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300">About</a>
+                        <a href="contact.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="signup.html" class="py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition duration-300">Sign Up</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section flex items-center justify-center">
+        <div class="text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Explore Nepal's Top Destinations</h1>
+            <p class="text-xl text-white mb-8">Discover the beauty and diversity of Nepal's most captivating places</p>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">Nepal Destinations</h2>
+                <p class="mt-4 text-xl text-gray-600">From mountain peaks to cultural treasures</p>
+            </div>
+            <div id="destinations-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Destinations will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">NepalMood</h3>
+                    <p class="text-gray-400">Redefining Nepal travel with personalized recommendations based on your mood, time, and preferences.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="destinations.html" class="text-gray-400 hover:text-white transition duration-300">Destinations</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Travel Tips</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 NepalMood. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/destinations.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load all destinations
+            const destinationsContainer = document.getElementById('destinations-container');
+            
+            // Create cards for each destination
+            destinations.forEach(destination => {
+                const card = document.createElement('div');
+                card.className = 'bg-white rounded-lg shadow-md overflow-hidden destination-card';
+                
+                card.innerHTML = `
+                    <div class="h-48 overflow-hidden">
+                        <img src="${destination.image}" alt="${destination.name}" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">${destination.name}</h3>
+                        <p class="text-gray-600 mb-4">${destination.description}</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            ${destination.interests.slice(0, 3).map(interest => `
+                                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">
+                                    ${interest.charAt(0).toUpperCase() + interest.slice(1)}
+                                </span>
+                            `).join('')}
+                        </div>
+                        <div class="mt-4">
+                            <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md transition duration-300">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                `;
+                
+                destinationsContainer.appendChild(card);
+            });
+        });
+    </script>
+</body>
+</html>

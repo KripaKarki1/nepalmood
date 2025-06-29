@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiences - NepalMood</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://public.youware.com/users-website-assets/prod/1e6b8fef-19d2-424c-ac94-d8f2e7904a8e/3125d7be3233402bae4e8a3e7c4d9947.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 50vh;
+        }
+        
+        .experience-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .experience-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+<script src="https://lib.youware.com/youware-lib.1747145198.js" id="yourware-lib"></script></head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4">
+                            <span class="text-blue-600 text-xl font-bold">NepalMood</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300">Home</a>
+                        <a href="destinations.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300">Destinations</a>
+                        <a href="experiences.html" class="py-4 px-2 text-blue-600 border-b-4 border-blue-600 font-semibold">Experiences</a>
+                        <a href="about.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300">About</a>
+                        <a href="contact.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="signup.html" class="py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition duration-300">Sign Up</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section flex items-center justify-center">
+        <div class="text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Unforgettable Nepal Experiences</h1>
+            <p class="text-xl text-white mb-8">Immerse yourself in authentic Nepali adventures and activities</p>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">Top Nepal Experiences</h2>
+                <p class="mt-4 text-xl text-gray-600">Create memories that will last a lifetime</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Trekking Experience -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden experience-card">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://source.unsplash.com/random/800x600/?nepal,trekking" alt="Trekking in Nepal" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Himalayan Trekking</h3>
+                        <p class="text-gray-600 mb-4">Embark on iconic treks through the world's highest mountain range, from the famous Everest Base Camp to the diverse Annapurna Circuit.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Adventure</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Nature</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Challenging</span>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md transition duration-300">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Wildlife Experience -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden experience-card">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://public.youware.com/users-website-assets/prod/1e6b8fef-19d2-424c-ac94-d8f2e7904a8e/3125d7be3233402bae4e8a3e7c4d9947.jpg" alt="Wildlife Safari" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Wildlife Safari</h3>
+                        <p class="text-gray-600 mb-4">Explore Nepal's national parks in search of rhinos, tigers, and exotic bird species on jeep safaris, elephant rides, or guided walks.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Wildlife</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Nature</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Family-friendly</span>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md transition duration-300">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cultural Experience -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden experience-card">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://public.youware.com/users-website-assets/prod/1e6b8fef-19d2-424c-ac94-d8f2e7904a8e/15273c37665c4b8896924a8825bdbe3c.jpg" alt="Cultural Tours" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Cultural Tours</h3>
+                        <p class="text-gray-600 mb-4">Immerse yourself in Nepal's rich heritage by exploring ancient temples, participating in traditional ceremonies, and visiting authentic villages.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Culture</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">History</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Spiritual</span>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md transition duration-300">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Adventure Experience -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden experience-card">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://source.unsplash.com/random/800x600/?nepal,rafting" alt="Adventure Sports" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Adventure Sports</h3>
+                        <p class="text-gray-600 mb-4">Get your adrenaline pumping with paragliding over Pokhara, white-water rafting in wild rivers, and mountain biking through rugged terrain.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Adventure</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Extreme</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Thrilling</span>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md transition duration-300">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Spiritual Experience -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden experience-card">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://source.unsplash.com/random/800x600/?nepal,meditation" alt="Spiritual Retreats" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Spiritual Retreats</h3>
+                        <p class="text-gray-600 mb-4">Find inner peace through yoga and meditation retreats in serene settings, guided by experienced practitioners in the birthplace of Buddha.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Spiritual</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Wellness</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Peaceful</span>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md transition duration-300">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food Experience -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden experience-card">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://source.unsplash.com/random/800x600/?nepal,food" alt="Culinary Journeys" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Culinary Journeys</h3>
+                        <p class="text-gray-600 mb-4">Savor authentic Nepali cuisine through cooking classes, market tours, and dining experiences that showcase the country's diverse flavors.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Food</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Culture</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Sensory</span>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md transition duration-300">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">NepalMood</h3>
+                    <p class="text-gray-400">Redefining Nepal travel with personalized recommendations based on your mood, time, and preferences.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="destinations.html" class="text-gray-400 hover:text-white transition duration-300">Destinations</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Travel Tips</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 NepalMood. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
